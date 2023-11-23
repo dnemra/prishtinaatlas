@@ -30,25 +30,4 @@ results.data.forEach(function(item) {
 });
 
 
-// Assuming you have a Leaflet map instance called 'map'
-const marker = L.marker([42.665648, 21.184981], {
-  icon: L.icon({
-    iconUrl: 'Icon/kroifoto.png',
-    iconSize: [60, 60],
-    iconAnchor: [15, 30],
-    popupAnchor: [10, -20],
-  }),
-}).addTo(map);
 
-// Custom styles for the popup content
-const customPopupStyle = `
-  <style>
-    .custom-popup {
-      width: 1000px; /* Set the desired width */
-      height: 1000px; /* Set the desired height */
-      background-color: #ffffff; /* Set the background color */
-      border: 5px solid #000000; /* Set the border */
-      padding: 10px; /* Adjust padding as needed */
-    }
-  </style>
-`;
