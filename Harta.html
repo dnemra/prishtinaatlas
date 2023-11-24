@@ -216,7 +216,7 @@ document.head.appendChild(customPopupCSS);
 
                 // Add a photo to the popup
                 if (data.photoUrl) {
-                    var photoHtml = "<img src='" + data.photoUrl + "' alt='Marker Photo' style='max-width:350px; max-height:350px;'>";
+                    var photoHtml = "<img src='" + data.photoUrl + "' alt='Marker Photo' style='max-width: 100%; max-height:150px;'>";
                     marker.bindPopup(data.description + "<br>" + photoHtml);
                 }
             });
