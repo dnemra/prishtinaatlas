@@ -186,6 +186,8 @@ var popupContent = "<div class='custom-popup'>This is a customized popup!</div>"
 marker.bindPopup(popupContent, {
     // Customize the popup style
     className: 'custom-popup-style'
+    maxWidth: 'auto' // Allow the popup to grow based on content
+                
    
 });
 
@@ -198,7 +200,7 @@ var customPopupStyle = `
         border-radius: 2px; /* border radius for rounded corners */
         font-size: 14px; /* font size */
         color: #333333; /* text color */
-         maxWidth: auto// Set the maximum width of the popup
+        maxWidth: auto; // Set the maximum width of the popup
         
     }
 `;
