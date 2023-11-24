@@ -194,8 +194,8 @@ marker.bindPopup(popupContent, {
 // Customize the CSS for the popup
 var customPopupStyle = `
     .custom-popup-style {
-        width: 400px; /* Set the width of the popup */
-        height: 400px; /* Set the height of the popup */
+        width: 350px; /* Set the width of the popup */
+        height: 350px; /* Set the height of the popup */
         background-color: #ffffff; /* background color */
         padding: 2px; /* padding around the content */
         border: 2px solid #000000; /* border style */
@@ -216,7 +216,7 @@ document.head.appendChild(customPopupCSS);
 
                 // Add a photo to the popup
                 if (data.photoUrl) {
-                    var photoHtml = "<img src='" + data.photoUrl + "' alt='Marker Photo' style='max-width: 100%; max-height:400px;'>";
+                    var photoHtml = "<img src='" + data.photoUrl + "' alt='Marker Photo' style='max-width: 100%; max-height:350px;'>";
                     marker.bindPopup(data.description + "<br>" + photoHtml);
                 }
             });
