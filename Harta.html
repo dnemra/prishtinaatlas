@@ -45,7 +45,19 @@
     background-color: #555;
 }
 
+//    Mobile and Tablet
+          body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}
+
+// End mobile and tablet
     </style>
+    
     <title>Prishtina Atlas</title>
 </head>
 <body>
@@ -67,6 +79,17 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
+
+        // Mobile and Tablet
+            var map = L.map('map').fitWorld();
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+            }).addTo(map);
+        
+        // End mobile and tablet
+        
         var map = L.map('map').setView([42.665648, 21.184981], 13);
 
         var defaultLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
